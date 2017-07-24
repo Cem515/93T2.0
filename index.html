@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
+
 <head>
   <meta charset="UTF-8">
   <title>Gulp Demo</title>
-<!-- bower:css -->
-<!-- endbower -->
+  <!-- bower:css -->
+  <!-- endbower -->
 
-<!-- inject:css -->
-<link rel="stylesheet" href="/app/styles.css">
-<!-- endinject -->
-<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/app/styles.css">
+  <!-- endinject -->
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
 </head>
 
 <body ng-controller="SwitchController as switchCtrl">
   <div id="topbar">
-  <h1 id="MainTitle"> 93' Til Brewing</h1>
-<div class="topnav" id="myTopnav">
-  <a ui-sref="main">Home</a>
-  <a ui-sref="beer">On Tap</a>
-  <a ui-sref="about">About Us</a>
-  <a ui-sref="contact">Contact Us</a>
-</div>
-</div>
-<div class="well" ui-view></div>
-<!-- bower:js -->
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<!-- endbower -->
-<h1></h1>
-<!-- inject:js -->
-<script src="/app/app.js"></script>
-<script src="/app/switch.controller.js"></script>
-<!-- endinject -->
+    <h1 id="MainTitle"> 93' Til Brewing</h1>
+    <div class="topnav" id="myTopnav">
+      <a ui-sref="main">Home</a>
+      <a ui-sref="beer">On Tap</a>
+      <a ui-sref="about">About Us</a>
+      <a ui-sref="contact">Contact Us</a>
+    </div>
+  </div>
+  <div class="well" ui-view></div>
+  <!-- bower:js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <!-- endbower -->
+  <h1></h1>
+  <!-- inject:js -->
+  <script src="/app/app.js"></script>
+  <script src="/app/switch.controller.js"></script>
+  <!-- endinject -->
 </body>
+
 </html>
