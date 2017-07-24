@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var app = angular.module('app', ['ui.router']);
+    var app = angular.module('app', ['ui.router']).value('localApi', 'http://localhost:54165/api/');;
     app.config(function ($stateProvider, $urlRouterProvider) {
 
         // For any unmatched url, redirect to /main

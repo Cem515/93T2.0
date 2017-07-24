@@ -11,5 +11,16 @@
         /* jshint validthis:true */
         var BeerCtrl = this;
 
+
+
+        BeerCtrl.init = function() {
+            BeerFactory
+            .getBeers()
+             .then(function (list) {
+                    BeerCtrl.BeerList = list;
+                }, function (error) {
+                    console.log(error);
+                })
+        }
     }
 })();
