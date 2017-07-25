@@ -5,15 +5,15 @@
         .module('app')
         .controller('BeerController', BeerController)
 
-    BeerController.$inject = ['$state', 'BeerFactory'];
+    BeerController.$inject = ['BeerFactory'];
 
-    function BeerController($state,BeerFactory) {
+    function BeerController(BeerFactory) {
         /* jshint validthis:true */
         var BeerCtrl = this;
 
 
 
-        BeerCtrl.init = function() {
+        window.onload = function() {
             BeerFactory
             .getBeers()
              .then(function (list) {
