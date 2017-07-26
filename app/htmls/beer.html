@@ -17,7 +17,7 @@
                                 <img class="img-responsive" ng-src="{{OwnListCtrl.oneObject.picture}}">
                             </div> -->
                 <div class="col-xs-7">
-                    <div>
+                    <div ng-show="BeerCtrl.showBeer">
                         <p>Beer Name: {{BeerCtrl.chosenBeer.beerName}}</p>
                         <p>ABV: {{BeerCtrl.chosenBeer.abv}}</p>
                         <p>Style: {{BeerCtrl.chosenBeer.style}}</p>

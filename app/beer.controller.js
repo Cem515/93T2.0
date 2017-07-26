@@ -11,6 +11,7 @@
 
         var BeerCtrl = this;
         BeerCtrl.chosenBeer = {};
+        BeerCtrl.showBeer = false;
 
 
         window.onload = function () {
@@ -28,6 +29,7 @@
                 .beerDetails(id)
                 .then(function (response) {
                     BeerCtrl.chosenBeer = response;
+                    BeerCtrl.showBeer = true;
                 }, function (error) {
                     console.log(error);
                 })
