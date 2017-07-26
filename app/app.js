@@ -15,8 +15,8 @@
             .state("beer", {
                 url: "/beermenu",
                 templateUrl: "app/htmls/beer.html",
-                controller:"BeerController",
-                controllerAs:"BeerCtrl"
+                controller:'BeerController',
+                controllerAs:'BeerCtrl'
             })
             .state("about", {
                 url: "/about",

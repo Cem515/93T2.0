@@ -1,11 +1,26 @@
-<p> On Tap Page </p>
-    <div class="row">
-        <!--first column on page-->
-        <!--Left panel, auto-populates listings already posted by an owner-->
-
-<ul ng-repeat="beer in BeerCtrl.BeerList" class="list-group">
-    <li>{{beer.BeerName}}</li>
-    <li>{{beer.ABV}}</li>
-    <li>{{beer.Syle}}</li>
-    <li>{{beer.Description}}</li>
-</ul>
+<div class="row">
+    <div class="list-group">
+        <button type="button" class="list-group-item" ng-repeat="beer in BeerCtrl.BeerList" ng-click="BeerCtrl.chooseBeer(beer.beersID)">
+                        {{beer.beerName}}
+         </button>
+    </div>
+</div>
+<div style="margin-top: 20px;" class="col-xs-12 col-md-8">
+    <div class="panel" id="box">
+        <div class="panel-body">
+            <div class="row">
+                <!-- <div class="col-xs-5">
+                                <img class="img-responsive" ng-src="{{OwnListCtrl.oneObject.picture}}">
+                            </div> -->
+                <div class="col-xs-7">
+                    <div>
+                        <p>Beer Name: {{BeerCtrl.chosenBeer.beerName}}</p>
+                        <p>ABV: {{BeerCtrl.chosenBeer.abv}}</p>
+                        <p>Style: {{BeerCtrl.chosenBeer.style}}</p>
+                        <p>Description: {{BeerCtrl.chosenBeer.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
