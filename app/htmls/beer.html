@@ -2,13 +2,12 @@
     <div style="margin-top: 20px;" class="col-xs-12 col-md-4">
         <div class="panel" id="box">
             <div class="list-group">
-                <button type="button" class="list-group-item" ng-repeat="beer in BeerCtrl.BeerList" ng-click="BeerCtrl.chooseBeer(beer.beersID)">
+                <button class="beertons" type="button" class="list-group-item" ng-repeat="beer in BeerCtrl.BeerList" ng-click="BeerCtrl.chooseBeer(beer.beersID)">
                         {{beer.beerName}}
          </button>
             </div>
         </div>
     </div>
-</div>
 <div style="margin-top: 20px;" class="col-xs-12 col-md-8">
     <div class="panel" id="box">
         <div class="panel-body">
@@ -27,4 +26,5 @@
             </div>
         </div>
     </div>
+</div>
 </div>
